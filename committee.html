@@ -24,13 +24,38 @@
                     <li><a href="venue.html"><span>VENUE</span></a></li>  <!--<li><a href="tpc.html"><span>Technical Program Committee</span></a></li>-->  <!--<li><a href="help.html"><span>Help</span></a></li>-->
                 </ul>
             </div>
+            <style>
+                ol {
+                    margin: 0 0 2.5em;
+                    padding: 0.5em;
+                    counter-reset: item;
+                }
+
+                ol > li {
+                    margin: 0.3em;
+                    padding: 0 0 0 2em;
+                    text-indent: -2em;
+                    list-style-type: none;
+                    counter-increment: item;
+                }
+
+                ol > li:before {
+                    /*margin: 1em;*/
+                    display: inline-block;
+                    width: 1em;
+                    padding-right: 0.5em;
+                    font-weight: bold;
+                    text-align: right;
+                    content: counter(item) ".";
+                }   
+            </style>
             <div class="content"><!-- <marquee><h3 style="color:red">Deadline for full paper submission has been extended upto 30th April 2016.</h3></marquee>-->
                 <br><br>
                 <div class="content-left">
                     
                     <h2><u>International Advisory Committee</u></h2><br>
                     <div style="overflow-y: scroll; height:400px;">
-                    <ul class="list1">
+                    <ol>
                         <li>Prof. Yahia Antar, Royal Millitary College, Canada</li>
                         <li>Prof. Kiyotoshi Yasumoto, Kyushu University, Japan</li>
                         <li>Prof. Sanjit K. Mitra, University of California, Sata Barbara</li>
@@ -42,7 +67,7 @@
                         <li>Prof. Chandra Shekhar, BITS Pilani, India</li>
                         <li>Prof. Bhabatosh Chanda, ISI Kolkata, India</li>
                         <li>Prof. G. Visweswaran, PES University, Baglore, India
-                        </li>Prof. S. D. Joshi, IIT Delhi, India
+                        <li>Prof. S. D. Joshi, IIT Delhi, India</li>
                         <li>Prof. M. T. Beg, JMI Delhi, India
                          </li>
                         <li>Prof. S. Minaei, Professor, Dogus University
@@ -104,14 +129,15 @@
                         <li>Prof. Sudeb Dasgupta IIT Roorkee, India</li>
                         <li>Prof. Satyabrata Jit, IIT (BHU)-Varanasi, India</li>
                         <li>Prof. NVLN Murty IIT Bhubaneswar, India</li>
-                    </ul><br><br>
+                        <li>Dr. Saurabh Kumar Pandey, IIT Patna, India</li>
+                    </ol><br><br>
                 </div>
                     <!-- </ul><br><br> -->
                     <br><br>
                     
                     <h2><u>Technical Program Committee</u></h2><br>
                     <div style="overflow-y: scroll; height:400px;"> <!--  margin-top: 30px-->
-                    <ul class="list1">
+                    <ol>
                         <li>Prof. D. R. Bhaskar, DTU, India</li>
                         <li>Prof . Rajiv Kapoor, DTU, India</li>
                         <li>Prof. O P Verma, DTU, India</li>
