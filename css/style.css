@@ -89,6 +89,8 @@ ul li {
   background-size: cover;
 
   background-repeat: no-repeat;
+	
+  float: left;
 
   opacity: 0;
 
@@ -175,7 +177,7 @@ ul li {
 	background-image: url(../images/topmenu.jpg);
 	background-repeat: no-repeat;
 	background-position: left top;
-	width: 1000px;
+	width: 1024px;
 	height: 74px;
 	float: left;
 }
