@@ -49,14 +49,128 @@ ul li {
 	margin-left: 00px;
 	margin-top:-10px;
 	margin-bottom:4px;
+}.slideshow { 
+
+  position: fixed;
+
+  width: 100%;
+
+  height: 100%;
+
+  top: 0;
+
+  left: 0;
+
+  z-index: 0;
+
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0;
+
 }
-.header-bottom {
-	background-image: url(../images/oat.jpg);
-	background-repeat: no-repeat;
-	background-position: left top;
-	width: 1000px;
-	height: 257px;
-	float: left;
+
+
+
+.slideshow li { 
+
+  width: 100%;
+
+  height: 100%;
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  background-size: cover;
+
+  background-position: left top 25%;
+
+  background-repeat: no-repeat;
+
+  opacity: 0;
+
+  z-index: 0;
+
+  animation: imageAnimation 50s linear infinite; 
+
+}
+
+
+
+.slideshow li:nth-child(1) { 
+
+  background-image: url(../images/oat.jpg) 
+
+}
+
+.slideshow li:nth-child(2) { 
+
+  background-image: url(../images/hawaMahal.jpg);
+
+  animation-delay: 10s; 
+
+}
+
+.slideshow li:nth-child(3) { 
+
+  background-image: url(../images/indiaGate.jpg);
+
+  animation-delay: 20s; 
+
+}
+
+.slideshow li:nth-child(4) { 
+
+  background-image: url(../images/tajMahal.jpg);
+
+  animation-delay: 30s; 
+
+}
+
+.slideshow li:nth-child(5) { 
+
+  background-image: url(../images/lotusTemple.jpg);
+
+  animation-delay: 40s; 
+
+}
+
+
+
+@keyframes imageAnimation { 
+
+  0% { 
+
+    opacity: 0; 
+
+    animation-timing-function: ease-in;
+
+  }
+
+  10% {
+
+    opacity: 1;
+
+    animation-timing-function: ease-out;
+
+  }
+
+  20% {
+
+    opacity: 1
+
+  }
+
+  30% {
+
+    opacity: 0
+
+  }
+
 }
 .topmenu {
 	background-image: url(../images/topmenu.jpg);
