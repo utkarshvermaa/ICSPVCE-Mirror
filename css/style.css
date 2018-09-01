@@ -236,6 +236,7 @@ ul li {
 .content {
 	background-color: #ffffff;
 	width: 952px;
+	z-index: 9;
 	float: left;
 	padding: 30px 24px 0px 24px;
 }
