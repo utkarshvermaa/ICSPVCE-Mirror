@@ -35,6 +35,7 @@ ul li {
 .heading {
 	margin: 0 auto;
 	z-index: 1;
+	position: relative;
 }
 .heading h1 {
 	font-family: "Times New Roman", Times, sans-serif;
@@ -184,6 +185,7 @@ ul li {
 	width: 1024px;
 	height: 74px;
 	float: left;
+	position: relative;
 }
 .topmenu ul {
 	height: 74px;
