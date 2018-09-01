@@ -242,6 +242,7 @@ ul li {
 .content-left {
 	background-image: url(../images/vline.jpg);
 	background-repeat: repeat-y;
+	text-align: justify;
 	background-position: right top;
 	width: 621px;
 	float: left;
