@@ -7,7 +7,7 @@ body {
 	background-repeat: repeat-x;
 	background-position: left top;
 	margin: 0px;
-	z-index: 0;
+	z-index: 1;
 }
 h1, h2, h3,ul,li{
 	padding: 0px;
