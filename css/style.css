@@ -65,7 +65,7 @@ ul li {
 }
 .slideshow { 
 
-  position: fixed;
+  position: absolute;
 
   width: 100%;
 
