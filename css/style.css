@@ -196,6 +196,8 @@ ul li {
 	position: relative;
 }
 .topmenu ul {
+	display: flex;
+	justify-content: space-around;
 	height: 74px;
 	margin-left: 10px;
 	list-style-type: none;
