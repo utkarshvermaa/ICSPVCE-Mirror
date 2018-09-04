@@ -34,11 +34,21 @@
                 <div class="content"><!-- <marquee><h3 style="color:red">Deadline for full paper submission has been extended upto 30th April 2016.</h3></marquee>--><br><br>
                     <div class="content-left">
                         <p style="font-size:18px">Authors are invited to submit original manuscripts reporting unpublished research in the topics related to the conference. The submitted work should not have been communicated to any other scientific proceeding. The topics of interest include, but are not limited to:</p> <!--<h1 align="center"><span><u>AREAS OF RESEARCH</u></span></h2><br>-->
-                        <h2><u>Signal and Image Processing</u></h2>
-                        <ul class="list1">
-                            <li>Image acquisition and Medical Image processing</li><li>3-D and Surface Reconstruction</li>
-                            <li>3D and Stereo Imaging Application and Others</li><li>Applications (Biomedical, Bioinformatics, Genomic, Seismic, Radar, Sonar, Remote Sensing, Positioning, etc.)</li><li>Audio/Speech Processing and Coding</li><li>Content-based Image retrieval</li><li>Detection and Estimation of Signal Parameters</li><li>Digital and Mobile Signal Processing</li><li>Face Recognition</li><li>Image acquisition and Medical Image processing</li><li>Image coding and compression</li><li>Image segmentation</li><li>Motion Detection</li><li>Nonlinear Signals and Systems</li><li>Pattern Recognition and Analysis</li><li>Signal Identification</li><li>Signal Reconstruction</li><li>Spectral Analysis</li><li>Statistical and Optical Signal Processing</li><li>Time-Frequency Signal Analysis</li><li> Image-Based Modeling</li><li>Image and Video Retrieval</li><li>Internet Signal Processing</li><li>Knowledge Representation and High-Level Vision</li><li>Medical Image Analysis</li><li>Multidimensional Signal Processing</li><li>Multiple Filtering and Filter Banks</li><li>Object Detection, Recognition and Categorization</li><li>Pattern Recognition in New Modalities</li>
-                        </ul><br>
+                        <h2>
+                            <button aria-expanded="false">
+                              Signal and Image Processing
+                              <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                                <rect class="vert" height="8" width="2" y="1" x="4"/>
+                                <rect height="2" width="8" y="4" x="1"/>
+                              </svg> 
+                            </button>
+                        </h2>
+                        <div hidden>
+                            <ul class="list1">
+                                <li>Image acquisition and Medical Image processing</li><li>3-D and Surface Reconstruction</li>
+                                <li>3D and Stereo Imaging Application and Others</li><li>Applications (Biomedical, Bioinformatics, Genomic, Seismic, Radar, Sonar, Remote Sensing, Positioning, etc.)</li><li>Audio/Speech Processing and Coding</li><li>Content-based Image retrieval</li><li>Detection and Estimation of Signal Parameters</li><li>Digital and Mobile Signal Processing</li><li>Face Recognition</li><li>Image acquisition and Medical Image processing</li><li>Image coding and compression</li><li>Image segmentation</li><li>Motion Detection</li><li>Nonlinear Signals and Systems</li><li>Pattern Recognition and Analysis</li><li>Signal Identification</li><li>Signal Reconstruction</li><li>Spectral Analysis</li><li>Statistical and Optical Signal Processing</li><li>Time-Frequency Signal Analysis</li><li> Image-Based Modeling</li><li>Image and Video Retrieval</li><li>Internet Signal Processing</li><li>Knowledge Representation and High-Level Vision</li><li>Medical Image Analysis</li><li>Multidimensional Signal Processing</li><li>Multiple Filtering and Filter Banks</li><li>Object Detection, Recognition and Categorization</li><li>Pattern Recognition in New Modalities</li>
+                            </ul><br>
+                        </div>
                         <h2>
                             <u>VLSI Design</u>
                         </h2>
@@ -52,3 +62,21 @@
                         </ul>
                         <div class="content-right"><br><h1 align="center">Venue</h2><p align="center"><img src="images/dtu.jpg"></p><p align="center">Delhi Technological University<br>Shahbad Daulatpur,Bawana Road,Delhi-110042</p><br><h1 align="center">Technical Sponsor</h2><p align="center"><img src="images/ieee.png"></p><p align="center"><b>IEEE Delhi Section</b><br><b>SUBJECT TO APPROVAL</b></p></div></div><div class="footer"><ul>  <li style="border-left: none"><a href="index.html">Home</a></li>  <li><a href="schedule.html">Important Dates</a></li>  <li><a href="organize.html">Organizing Entity</a></li>  <li><a href="help.html">Help</a></li></ul></div></div></div></body>
 </html>
+    
+<script>
+    (function() {
+  const headings = document.querySelectorAll('h2');
+  
+  Array.prototype.forEach.call(headings, h => {
+    let btn = h.querySelector('button');
+    let target = h.nextElementSibling;
+    
+    btn.onclick = () => {
+      let expanded = btn.getAttribute('aria-expanded') === 'true';
+      
+      btn.setAttribute('aria-expanded', !expanded);
+      target.hidden = expanded;  
+    }
+  });
+})()
+</script>
