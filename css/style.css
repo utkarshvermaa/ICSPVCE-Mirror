@@ -24,6 +24,9 @@ ul li {
 	width: 100%;
 	float: left;
 }
+.updates {
+	margin: 100px;
+}
 .page {
 	width: 1000px;
 	height: inherit;
