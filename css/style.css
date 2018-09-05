@@ -151,7 +151,7 @@ ul li {
 
   10% {
 
-    opacity: 0.6;
+    opacity: 1;
 
     animation-timing-function: ease-out;
 
@@ -159,7 +159,7 @@ ul li {
 
   20% {
 
-    opacity: 0.6;
+    opacity: 1;
 
   }
 
